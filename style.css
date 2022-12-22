@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.main-page{
+    height: 100vh;
+    background-image: url("bg.jpg");
+    background-size: cover;
+}
+
+.main-page .navbar{
+    height: 55px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+.main-page .navbar ul{
+    list-style: none;
+    padding: 16px;
+}
+
+
+/* LEFT LIST */
+/* .main-page .navbar .left-list{
+     background-color: orange; 
+} */
+.main-page .navbar .left-list ul li{
+    display: inline;
+    padding: 10px;
+}
+.main-page .navbar .left-list ul li .sign-up{
+    background-color: white;
+    color: black;
+    padding: 8px;
+    border-radius: 40px;
+}
+
+.main-page .navbar .left-list ul li .log-in-icon img , .products-icon img , .lift-icon img{
+    width: 18px;
+    margin-left: -15px;
+}
+/* LEFT-LIST */
+
+/* RIGHT LIST */
+
+.main-page .navbar .right-list ul li {
+    display: inline-block;
+    padding: 0 20px;
+}
+.main-page .navbar .right-list ul li .logo{
+    width: 50px;
+    padding: 0 0;
+}
+
+/* RIGHT-LIST *
+
+/* PAGE CONTENT */
+
+.main-page .page-content{
+    /* background-color: black; */
+    width: 70%;
+    height: 65vh;
+    margin: 4% 15%;
+}
+
+.main-page .page-content .service-details{
+    background-color: white;
+    width: 70vw;
+    height: 15vh;
+    display: flex;
+}
+
+.main-page .page-content .service-details .elevate, .bike , .transit , .business, .freight, .eat , .travel , .earn{
+    width: 12.5%;
+    height: 15vh;
+    /* border: 1px solid black; */
+    /* cursor: pointer; */
+}
+
+.main-page .page-content .service-details .icon{
+    width: 100%;
+    height: 7.5vh;
+    /* background-color: red; */
+    text-align: center;
+    padding-top: 25px;
+}
+
+.main-page .page-content .service-details .service-name{
+    color: black;
+    font-size: 1em;
+    font-weight: 20px;
+    padding: 10px 5px;
+    text-align: center;
+}
+
+
+.main-page .page-content .content{
+    width: 537px;
+    background-color: white;
+    height: 50vh;
+    padding-top: 60px;
+}
+
+.main-page .page-content .content .main-quote{
+    width: 100%;
+    height: 110px;
+    /* background-color: aqua; */
+    font-size: 2.5em;
+    text-align: right;
+    padding-left: 150px;
+    padding-right: 50px;
+}
+
+.main-page .page-content .content .details{
+    width: 100%;
+    height: 70px;
+    /* background-color: pink; */
+    font-size: 1em;
+    text-align: right;
+    padding-left: 90px;
+    padding-right: 50px;
+}
+.main-page .page-content .content .sign-up-btn{
+    padding-left: 350px;
+}
+.main-page .page-content .content .sign-up-btn button{
+    width: 120px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    padding: 2px;
+    font-weight: 20px;
+}
+.main-page .page-content .content .learn-more{
+    padding-top: 20px;
+    padding-left: 200px;
+}
+.main-page .page-content .content .learn-more a{
+    text-decoration: underline;
+    color: black;
+}
+
+@media screen and (max-width:600px) {
+    .main-page{
+        width: 100%;
+        height: 100vh;
+        background-image: url("bgfull.jpg");
+        background-size: contain;
+        /* background-repeat: no-repeat; */
+    }
+    .main-page .navbar{
+        width: 100%;
+    }
+    
+    .products , .products-icon, .lift , .lift-icon , .covid , .company, .log-in-icon{
+        display: none;
+    }
+    ul{
+        padding-left: 0;
+     }
+    .main-page .navbar .right-list ul li .logo{
+        width: 12px;
+    }
+
+    .main-page .page-content{
+        /* background-color: black; */
+        width: 70%;
+        height: 95vh;
+        margin: 4% 15%;
+    }
+    .main-page .page-content .content{
+        width: 300px;
+        background-color: white;
+        height: 40vh;
+        margin-top: 20px;
+        padding-top: 30px;
+        box-sizing: content-box;
+    }
+    
+    .main-page .page-content .content .main-quote{
+        width: 100%;
+        height: 90px;
+        /* background-color: aqua; */
+        font-size: 1.5em;
+        text-align: right;
+        padding-left: 60px;
+        padding-right: 30px;
+    }
+    
+    .main-page .page-content .content .details{
+        width: 100%;
+        height: 35px;
+        /* background-color: pink; */
+        font-size: 0.7em;
+        text-align: right;
+        padding-left: 20px;
+        padding-right: 30px;
+    }
+    .main-page .page-content .content .sign-up-btn{
+        padding-left: 135px;
+    }
+    .main-page .page-content .content .sign-up-btn button{
+        width: 90px;
+        height: 30px;
+        font-size: 0.7em;
+        border-radius: 4px;
+        border: 1px solid black;
+        background-color: black;
+        color: white;
+        padding: 2px;
+        font-weight: 20px;
+    }
+    .main-page .page-content .content .learn-more{
+        padding-top: 20px;
+        padding-left: 90px;
+        padding-right: 30px;
+    }
+    .main-page .page-content .content .learn-more a{
+        text-decoration: underline;
+        color: black;
+        font-size: 1em;
+    }
+    
+    .main-page .page-content .service-details{
+        background-color: white;
+        width: 78vw;
+        height: 30vh;
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: content-box;
+    }
+    
+    .main-page .page-content .service-details .elevate, .bike , .transit , .business, .freight, .eat , .travel , .earn{
+        width: 25%;
+        height: 5vh;
+        /* border: 1px solid black; */
+        /* cursor: pointer; */
+    }
+    
+    .main-page .page-content .service-details .icon{
+        width: 100%;
+        height: 7.5vh;
+        /* background-color: red; */
+        text-align: center;
+        padding-top: 25px;
+    }
+    
+    .main-page .page-content .service-details .service-name{
+        color: black;
+        font-size: 1em;
+        font-weight: 20px;
+        padding: 10px 5px;
+        text-align: center;
+    }
+    
+}
